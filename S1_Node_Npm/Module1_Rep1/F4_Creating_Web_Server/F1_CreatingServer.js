@@ -14,3 +14,6 @@ const server = http.createServer((req, res) => {
 server.listen(8000, '127.0.0.1', ()=>{
     console.log('listening to requests on port 8000')
 })
+
+// 📌 One thing to noted - App keeps on running before that it does their work and exited the application
+// right now it keeps on running the server and does not exited the application because of event loop will talk later on.
