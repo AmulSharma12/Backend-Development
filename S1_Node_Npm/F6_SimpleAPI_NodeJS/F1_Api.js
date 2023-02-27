@@ -19,7 +19,7 @@ const dataObject = JSON.parse(data);
 // 📌 we are trying to achieve read the data from the different file data.json
 // reading json file and parse into javascript object and send back to client
 const server = http.createServer((req, res) => {
-  if (req.url === "/" || req.url === "/index") {
+  if (req.url === "/" || req.url === "/overview") {
     res.end("welcome to home page");
   } else if (req.url === "/product") {
     res.end("welcome to product page !");
